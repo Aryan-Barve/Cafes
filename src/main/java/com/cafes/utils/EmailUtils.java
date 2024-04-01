@@ -37,7 +37,7 @@ public class EmailUtils {
 		
 		MimeMessage message = javaMailSender.createMimeMessage();
 		MimeMessageHelper helper = new MimeMessageHelper(message, true);
-		helper.setFrom("xyz2017@gmail.com");
+		helper.setFrom("xyz@gmail.com");
 		helper.setTo(to);
 		helper.setSubject(subject);
 		String htmlMsg = "<p><b>Your Login details for Cafe Management System</b><br><b>Email: </b> " + to + " <br><b>Password: </b> " + password + "<br><a href=\"http://localhost:4200/\">Click here to login</a></p>";
