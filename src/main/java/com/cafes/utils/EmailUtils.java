@@ -18,7 +18,7 @@ public class EmailUtils {
 	
 	public void sendSimpleMessage(String to, String subject, String text, List<String> ccList) {
 		SimpleMailMessage message = new SimpleMailMessage();
-		message.setFrom("aryanbrave2017@gmail.com");
+		message.setFrom("xyz@gmail.com");
 	    message.setTo(to);
 	    message.setSubject(subject);
 	    message.setText(text);
@@ -37,7 +37,7 @@ public class EmailUtils {
 		
 		MimeMessage message = javaMailSender.createMimeMessage();
 		MimeMessageHelper helper = new MimeMessageHelper(message, true);
-		helper.setFrom("aryanbrave2017@gmail.com");
+		helper.setFrom("xyz2017@gmail.com");
 		helper.setTo(to);
 		helper.setSubject(subject);
 		String htmlMsg = "<p><b>Your Login details for Cafe Management System</b><br><b>Email: </b> " + to + " <br><b>Password: </b> " + password + "<br><a href=\"http://localhost:4200/\">Click here to login</a></p>";
